@@ -71,7 +71,7 @@ public class EnchantmentInfo {
         float absoluteMaxPower = EnchantingStatRegistry.getAbsoluteMaxEterna() * 2f;
         int powerScalar = Mth.floor(absoluteMaxPower / maxEnchantmentLevel);
         String defaultMaxF = String.format("%d * x", powerScalar);
-        String defaultMinF = "x";
+        String defaultMinF = "1";
 
 
         String category = BuiltInRegistries.ENCHANTMENT.getKey(ench).toString();
