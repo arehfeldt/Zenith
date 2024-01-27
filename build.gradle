@@ -86,10 +86,10 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modCompileOnly modRuntimeOnly( "dev.shadowsoffire.placebo:placebo-fabric-1.20.1:${project.fakerlib_version}"), {
+	modCompileOnly modRuntimeOnly( "maven.modrinth:fakerlib:${project.fakerlib_version}"), {
 		exclude(group: "me.shedaniel")
 	}
-	modCompileOnly modRuntimeOnly( "dev.bagel:ZenithAttributes:${project.zenith_attributes_version}"), {
+	modCompileOnly modRuntimeOnly( "maven.modrinth:zenith-attributes:${project.zenith_attributes_version}"), {
 		exclude(group: "me.shedaniel")
 	}
 
